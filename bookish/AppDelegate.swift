@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
  
         // Test Data
-        let _ = Book(title: "Let My People Go Surfing", author: "Yvon Chounaird", review: "The biography of Patagonia by its legendary climber-founder: Yvon.", context: stack.context)
-        let _ = Book(title: "The Grid", author: "Matt Watkinson", review: "How to make real-time business decisions through the use of a revolutionary matrix: the Grid.", context: stack.context)
+        let _ = Book(title: "Let My People Go Surfing", author: "Yvon Chounaird", review: "The biography of Patagonia by its legendary climber-founder: Yvon. The biography of Patagonia by its legendary climber-founder: Yvon. The biography of Patagonia by its legendary climber-founder: Yvon. The biography of Patagonia by its legendary climber-founder: Yvon.", context: stack.context)
+        let _ = Book(title: "The Grid", author: "Matt Watkinson", review: "How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid. How to make real-time business decisions through the use of a revolutionary matrix: the Grid.", context: stack.context)
         
     }
     

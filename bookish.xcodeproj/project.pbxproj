@@ -23,6 +23,7 @@
 		F5BCF5C21F7B7A4300B318D5 /* ReviewTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCF5C11F7B7A4300B318D5 /* ReviewTextDelegate.swift */; };
 		F5BCF5C41F7B976500B318D5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCF5C31F7B976500B318D5 /* Helper.swift */; };
 		F5D0BF2B1F837C9F00B0EDFA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0BF2A1F837C9F00B0EDFA /* MaterialButton.swift */; };
+		F5D9C7241F869FC0001A51D6 /* AbrilFatface-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5D9C7231F869FC0001A51D6 /* AbrilFatface-Regular.otf */; };
 		F5ED4C181F71FF6C008A222F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED4C171F71FF6C008A222F /* AppDelegate.swift */; };
 		F5ED4C1A1F71FF6C008A222F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED4C191F71FF6C008A222F /* SearchViewController.swift */; };
 		F5ED4C1D1F71FF6C008A222F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED4C1B1F71FF6C008A222F /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		F5BCF5C11F7B7A4300B318D5 /* ReviewTextDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextDelegate.swift; sourceTree = "<group>"; };
 		F5BCF5C31F7B976500B318D5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F5D0BF2A1F837C9F00B0EDFA /* MaterialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		F5D9C7201F869F77001A51D6 /* abril-fatface */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "abril-fatface"; sourceTree = "<group>"; };
+		F5D9C7231F869FC0001A51D6 /* AbrilFatface-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbrilFatface-Regular.otf"; path = "Bookish/abril-fatface/AbrilFatface-Regular.otf"; sourceTree = "<group>"; };
 		F5ED4C141F71FF6C008A222F /* Bookish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED4C171F71FF6C008A222F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5ED4C191F71FF6C008A222F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		F5ED4C0B1F71FF6C008A222F = {
 			isa = PBXGroup;
 			children = (
+				F5D9C7231F869FC0001A51D6 /* AbrilFatface-Regular.otf */,
 				F5ED4C161F71FF6C008A222F /* Bookish */,
 				F5ED4C151F71FF6C008A222F /* Products */,
 				EFB3DDDD3EF91FDCC07F843C /* Pods */,
@@ -162,6 +166,7 @@
 			children = (
 				F5BCF5BE1F7A7E5200B318D5 /* SaveButton.swift */,
 				F5D0BF2A1F837C9F00B0EDFA /* MaterialButton.swift */,
+				F5D9C7201F869F77001A51D6 /* abril-fatface */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				F5ED4C221F71FF6C008A222F /* LaunchScreen.storyboard in Resources */,
 				F5ED4C1F1F71FF6C008A222F /* Assets.xcassets in Resources */,
 				F5ED4C1D1F71FF6C008A222F /* Main.storyboard in Resources */,
+				F5D9C7241F869FC0001A51D6 /* AbrilFatface-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
