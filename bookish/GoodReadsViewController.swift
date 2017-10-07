@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Material
 
 class GoodReadsViewController: UITableViewController {
     
+    @IBOutlet weak var toolbar: UIToolbar!
+    
     let cellIdentifier = "bookReviewCell"
+    var activityIndicator = UIActivityIndicatorView()
     var latestBookReviews = [GoodReadsBookReview]()
     
     override func viewDidLoad() {
@@ -19,14 +23,22 @@ class GoodReadsViewController: UITableViewController {
         tableView.estimatedRowHeight = 155.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        toolbar.isTranslucent = false
+        toolbar.barTintColor = Color.yellow.darken1
         fetchData()
     }
 
     func fetchData() {
         let clientParser = GoodReadsClient()
+        startActivityIndicator(activityIndicator)
+        
         clientParser.parse { (success, error, results) in
             
             guard error == nil else {
+                performUpdatesOnMain {
+                    self.stopActivityIndicator(self.activityIndicator)
+                    self.displayAlert(title: "Oops", message: "The network request to GoodReads failed. Check your internet connection.", handler: {_ in })
+                }
                 print(error?.localizedDescription ?? "The network request to GoodReads failed.")
                 return
             }
@@ -35,16 +47,22 @@ class GoodReadsViewController: UITableViewController {
                 if let results = results {
                     self.latestBookReviews = results
                     performUpdatesOnMain {
+                        self.stopActivityIndicator(self.activityIndicator)
                         self.tableView.reloadData()
                     }
                 }
             }
         }
     }
+    
+    @IBAction func refreshButton(_ sender: Any) {
+        fetchData()
+    }
+    
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return latestBookReviews.count
     }
     
@@ -64,6 +82,7 @@ class GoodReadsViewController: UITableViewController {
                 if UIApplication.shared.canOpenURL(url) {
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 } else {
+                    self.displayAlert(title: "Oops", message: "Could not open the url for this GoodReads review", handler: {_ in })
                     print ("Could not open: \(url.absoluteString)")
                 }
             }

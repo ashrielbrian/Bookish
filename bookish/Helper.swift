@@ -13,7 +13,7 @@ extension UIViewController {
     
     func startActivityIndicator(_ activityIndicator: UIActivityIndicatorView) {
         activityIndicator.center = self.view.center
-        activityIndicator.activityIndicatorViewStyle = .white
+        activityIndicator.activityIndicatorViewStyle = .gray
         
         performUpdatesOnMain {
             self.view.addSubview(activityIndicator)

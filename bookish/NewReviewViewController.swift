@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Material
 
 class NewReviewViewController: UIViewController {
     
-    let placeholderText = "What did you think about this book?"
+    let placeholderText = "Your thoughts on the book?"
     let reviewTextDelegate = ReviewTextViewFieldDelegate()
     
-    
+    @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var reviewTextView: UITextView!
@@ -26,6 +27,7 @@ class NewReviewViewController: UIViewController {
         
         reviewTextView.text = placeholderText
         reviewTextView.textColor = UIColor.lightGray
+        toolbar.barTintColor = Color.yellow.darken1
     }
     
     @IBAction func cancelButton(_ sender: Any) {
@@ -50,5 +52,4 @@ class NewReviewViewController: UIViewController {
             }
         }
     }
-
 }

@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Material
 
 class SearchResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var tableView: UITableView!
     let reuseIdentifier = "searchResultsCell"
     var nytBookReviews = [NYTBookReview]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 70
+        toolbar.isTranslucent = false
+        toolbar.barTintColor = Color.yellow.darken1
+        
     }
     
     @IBAction func cancelButton(_ sender: Any) {

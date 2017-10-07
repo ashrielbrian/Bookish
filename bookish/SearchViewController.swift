@@ -25,7 +25,7 @@ class SearchViewController: UIViewController {
     // Sets the background image
     func configureBackgroundImage() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "front")?.draw(in: self.view.bounds)
+        UIImage(named: "front2")?.draw(in: self.view.bounds)
         
         if let image: UIImage = UIGraphicsGetImageFromCurrentImageContext() {
             UIGraphicsEndImageContext()
@@ -47,7 +47,10 @@ class SearchViewController: UIViewController {
                 (success, error, bookReviewResults) in
                 
                 guard error == nil else {
-                    print (error?.localizedDescription ?? "Network Request to New York Times failed.")
+                    performUpdatesOnMain {
+                        self.stopActivityIndicator(self.activityIndicator)
+                        self.displayAlert(title: "Oops", message: "Network Request to New York Times failed.", handler: {_ in })
+                    }
                     return
                 }
                 
@@ -76,6 +79,8 @@ class SearchViewController: UIViewController {
                 }
                 
             })
+        } else {
+            displayAlert(title: "Oops!", message: "Please enter a title to search for!", handler: {_ in })
         }
     }
     

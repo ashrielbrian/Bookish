@@ -16,13 +16,11 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var reviewText: UILabel!
     
     var book: Book!
-    let fabImage = UIImage(named: "add-white")
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateBookInfo()
-        prepareFabButton(fabImage!)
     }
     
     func updateBookInfo() {

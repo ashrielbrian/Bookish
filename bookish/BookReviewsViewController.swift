@@ -14,13 +14,13 @@ class BookReviewsViewController: CoreDataTableViewController {
     
     
     let reuseIdentifier = "myBookCell"
-    let fabImage = UIImage(named: "add-white")
-    //let delegate = AppDelegate.sharedInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let stack = delegate.stack
+        
+        configureNavBar()
         
         // Create a fetch request
         let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Book")
@@ -28,7 +28,12 @@ class BookReviewsViewController: CoreDataTableViewController {
         
         // Create the fetch results controller
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
-        
+    }
+    
+    func configureNavBar() {
+        self.navigationController?.navigationBar.barTintColor = Color.yellow.darken1
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
