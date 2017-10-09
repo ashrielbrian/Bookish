@@ -23,11 +23,18 @@ class NewReviewViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboard()
         
-        reviewTextView.delegate = reviewTextDelegate
+        configureTextField()
+        toolbar.barTintColor = Color.yellow.darken1
+    }
+    
+    func configureTextField() {
+        reviewTextView.isUserInteractionEnabled = true
+        reviewTextView.showsVerticalScrollIndicator = true
+        reviewTextView.isScrollEnabled = true
         
+        reviewTextView.delegate = reviewTextDelegate
         reviewTextView.text = placeholderText
         reviewTextView.textColor = UIColor.lightGray
-        toolbar.barTintColor = Color.yellow.darken1
     }
     
     @IBAction func cancelButton(_ sender: Any) {
@@ -53,3 +60,5 @@ class NewReviewViewController: UIViewController {
         }
     }
 }
+
+

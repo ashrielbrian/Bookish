@@ -43,12 +43,14 @@ extension UIViewController {
     // MARK: - Keyboards
     // Resigns keyboard on tap
     func hideKeyboard() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        tapRecognizer.numberOfTapsRequired = 1
+        tapRecognizer.cancelsTouchesInView = false // IMPORTANT: this ensures that each subview will handle a tap accordingly; eg a UIButton will handle the tap through its own IBAction, whilst tapping anywhere else will call dismissKeyboard()
+        self.view.addGestureRecognizer(tapRecognizer)
     }
     
-    func dismissKeyboard() {
-        view.endEditing(true)
+    @objc func dismissKeyboard(_ recognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
 }
 

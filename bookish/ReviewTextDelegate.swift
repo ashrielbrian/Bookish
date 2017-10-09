@@ -24,4 +24,20 @@ class ReviewTextViewFieldDelegate: NSObject, UITextViewDelegate {
             textView.textColor = UIColor.lightGray
         }
     }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        textView.resignFirstResponder()
+        return true
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        textView.scrollToBotom()
+    }
+}
+
+extension UITextView {
+    func scrollToBotom() {
+        let range = NSMakeRange(text.characters.count - 1, 1)
+        scrollRangeToVisible(range)
+    }
 }

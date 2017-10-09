@@ -18,7 +18,8 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureBackgroundImage()
+        configureBackgroundImage()
+        bookTitleTextField.delegate = self
         self.hideKeyboard()
     }
     
@@ -89,6 +90,14 @@ class SearchViewController: UIViewController {
         controller.nytBookReviews = self.nytBookReviews
         self.present(controller, animated: true, completion: nil)
     }
-
 }
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+
 

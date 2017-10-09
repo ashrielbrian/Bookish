@@ -335,7 +335,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZD-OO-r7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="926"/>
+            <point key="canvasLocation" x="1585" y="833"/>
         </scene>
         <!--My Books-->
         <scene sceneID="RCK-hq-TWA">
@@ -343,7 +343,7 @@
                 <navigationController id="Mru-sS-EUm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Books" image="book-black" selectedImage="book-white" id="XwL-Pt-Vlo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZ0-94-Efu">
-                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -372,7 +372,7 @@
                                     <barButtonItem systemItem="cancel" id="Etr-Gh-Hbi">
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <connections>
-                                            <action selector="cancelButton:" destination="PrS-9Z-gqx" id="hdx-KF-82b"/>
+                                            <action selector="cancelButton:" destination="PrS-9Z-gqx" id="zpg-Jp-BBK"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

@@ -16,7 +16,6 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var reviewText: UILabel!
     
     var book: Book!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
