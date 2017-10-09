@@ -3,7 +3,7 @@
 //  Bookish
 //
 //  Created by Ashriel Brian Tang on 20/09/2017.
-//  Copyright © 2017 Udacity. All rights reserved.
+//  Copyright © 2017 Ashriel Brian Tang. All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ class NewReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboard()
         
         reviewTextView.delegate = reviewTextDelegate
         

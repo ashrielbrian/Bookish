@@ -343,7 +343,7 @@
                 <navigationController id="Mru-sS-EUm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Books" image="book-black" selectedImage="book-white" id="XwL-Pt-Vlo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZ0-94-Efu">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -465,7 +465,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA9-Em-6HG">
-                                        <rect key="frame" x="20" y="20" width="250" height="49"/>
+                                        <rect key="frame" x="20" y="20" width="262" height="49"/>
                                         <fontDescription key="fontDescription" name="AbrilFatface-Regular" family="Abril Fatface" pointSize="36"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -476,8 +476,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mf-93-VtV">
-                                        <rect key="frame" x="20" y="185" width="250" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Summary" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mf-93-VtV">
+                                        <rect key="frame" x="20" y="169" width="250" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="Z0W-4K-Csc"/>
                                         </constraints>
@@ -489,14 +489,14 @@
                                 <constraints>
                                     <constraint firstItem="5mf-93-VtV" firstAttribute="trailing" secondItem="2b4-tD-nKj" secondAttribute="trailing" id="5tE-LN-pOO"/>
                                     <constraint firstItem="kA9-Em-6HG" firstAttribute="leading" secondItem="MnN-mW-LRW" secondAttribute="leading" constant="20" id="CvS-rT-EDR"/>
-                                    <constraint firstItem="5mf-93-VtV" firstAttribute="top" secondItem="2b4-tD-nKj" secondAttribute="bottom" constant="64" id="Eub-3p-frk"/>
+                                    <constraint firstItem="5mf-93-VtV" firstAttribute="top" secondItem="2b4-tD-nKj" secondAttribute="bottom" constant="48" id="Eub-3p-frk"/>
                                     <constraint firstItem="2b4-tD-nKj" firstAttribute="top" secondItem="kA9-Em-6HG" secondAttribute="bottom" constant="32" id="Pdt-Ol-hCt"/>
                                     <constraint firstItem="kA9-Em-6HG" firstAttribute="top" secondItem="MnN-mW-LRW" secondAttribute="top" constant="20" id="UWk-zD-QUD"/>
                                     <constraint firstItem="2b4-tD-nKj" firstAttribute="leading" secondItem="kA9-Em-6HG" secondAttribute="leading" id="WU6-j3-rUE"/>
                                     <constraint firstItem="5mf-93-VtV" firstAttribute="leading" secondItem="2b4-tD-nKj" secondAttribute="leading" id="cN3-py-hxW"/>
                                     <constraint firstAttribute="trailing" secondItem="2b4-tD-nKj" secondAttribute="trailing" constant="20" id="lMb-te-XL4"/>
                                     <constraint firstAttribute="bottom" secondItem="5mf-93-VtV" secondAttribute="bottom" constant="100" id="oZk-8s-YfY"/>
-                                    <constraint firstAttribute="trailing" secondItem="kA9-Em-6HG" secondAttribute="trailing" constant="20" id="rt3-MM-zjg"/>
+                                    <constraint firstAttribute="trailing" secondItem="kA9-Em-6HG" secondAttribute="trailing" constant="8" id="rt3-MM-zjg"/>
                                 </constraints>
                             </scrollView>
                         </subviews>

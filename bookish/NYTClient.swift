@@ -3,16 +3,15 @@
 //  Bookish
 //
 //  Created by Ashriel Brian Tang on 20/09/2017.
-//  Copyright © 2017 Udacity. All rights reserved.
+//  Copyright © 2017 Ashriel Brian Tang. All rights reserved.
 //
 
 import Foundation
 
-// Class to make network requests to The New York Times
+// MARK: - The New York Times Client Network Request
 
 class NYTClient: NSObject {
     
-    // Instantiating the NYTClient class
     class func sharedInstance() -> NYTClient {
         struct Singleton {
             static var instance = NYTClient()
@@ -25,6 +24,8 @@ class NYTClient: NSObject {
     }
     
     let session = URLSession.shared
+    
+    // MARK: - NYT Network Request Function
     
     func bookReviewSearch (title: String, completionHandlerForBookReviewSearch: @escaping (_ success: Bool, _ error: NSError?, _ bookReviewResults: [[String: AnyObject]]?) -> Void) {
         
@@ -76,7 +77,7 @@ class NYTClient: NSObject {
         task.resume()
     }
     
-    
+    // MARK: - Helper Functions
     private func convertDataToJSONWithCompletionHandler(data: Data, completionHandlerForConvertData: (_ results: AnyObject?, _ error: NSError?) -> Void) {
         
         var parsedJSON: AnyObject? = nil

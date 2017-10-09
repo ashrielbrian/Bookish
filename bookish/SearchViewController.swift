@@ -3,7 +3,7 @@
 //  Bookish
 //
 //  Created by Ashriel Brian Tang on 20/09/2017.
-//  Copyright © 2017 Udacity. All rights reserved.
+//  Copyright © 2017 Ashriel Brian Tang. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureBackgroundImage()
-        
+        self.hideKeyboard()
     }
     
     // Sets the background image
@@ -73,7 +73,6 @@ class SearchViewController: UIViewController {
                         }
                     }
                     
-                    print ("Array of BookReview class: \(self.nytBookReviews)")
                 } else {
                     self.displayAlert(title: "Error", message: "No Network Conection", handler: {_ in })
                 }

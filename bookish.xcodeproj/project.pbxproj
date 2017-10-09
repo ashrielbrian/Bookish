@@ -46,6 +46,7 @@
 		F52DBC371F822FE800A2DF15 /* GoodReadsBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodReadsBookModel.swift; sourceTree = "<group>"; };
 		F52DBC391F824D8800A2DF15 /* GoodReadsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodReadsTableViewCell.swift; sourceTree = "<group>"; };
 		F53897461F7CBF2300F83D10 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		F5A7C7711F8B7AD80089350F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5BA89A31F74F58C001F118D /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		F5BA89A51F74F89C001F118D /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		F5BA89A71F7673B7001F118D /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D9C7231F869FC0001A51D6 /* AbrilFatface-Regular.otf */,
+				F5A7C7711F8B7AD80089350F /* README.md */,
 				F5ED4C161F71FF6C008A222F /* Bookish */,
 				F5ED4C151F71FF6C008A222F /* Products */,
 				EFB3DDDD3EF91FDCC07F843C /* Pods */,
